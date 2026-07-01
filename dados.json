@@ -71,57 +71,84 @@
       "lancamentos": {
         "c1782909833981": {
           "usar": true,
-          "valor": 1869.15
+          "valor": 1869.15,
+          "vencimento": 14,
+          "pago": true
         },
         "c1782910031634": {
           "usar": true,
-          "valor": 0
+          "valor": 0,
+          "vencimento": 10,
+          "pago": false
         },
         "c1782910038609": {
           "usar": true,
-          "valor": 49.39
+          "valor": 49.39,
+          "vencimento": 8,
+          "pago": true
         },
         "c1782910059610": {
           "usar": true,
-          "valor": 129
+          "valor": 129,
+          "vencimento": 15,
+          "pago": true
         },
         "c1782910068090": {
-          "usar": true,
-          "valor": 0
+          "usar": false,
+          "valor": 0,
+          "vencimento": 28,
+          "pago": false
         },
         "c1782910102987": {
           "usar": true,
-          "valor": 82
+          "valor": 82,
+          "vencimento": 9,
+          "pago": false
         },
         "c1782910110003": {
           "usar": true,
-          "valor": 200
+          "valor": 200,
+          "vencimento": 10,
+          "pago": false
         },
         "c1782910132507": {
           "usar": true,
-          "valor": 397
+          "valor": 397,
+          "vencimento": 10,
+          "pago": true
         },
         "c1782910145611": {
           "usar": true,
-          "valor": 1367.21
+          "valor": 1367.21,
+          "vencimento": 28,
+          "pago": true
         },
         "c1782910185885": {
           "usar": true,
-          "valor": 440
+          "valor": 440,
+          "vencimento": 15,
+          "pago": false
         },
         "c1782910193092": {
           "usar": true,
-          "valor": 2184.21
+          "valor": 2184.21,
+          "vencimento": 10,
+          "pago": false
         },
         "c1782910199829": {
           "usar": true,
-          "valor": 685.02
+          "valor": 685.02,
+          "vencimento": 15,
+          "pago": false
         },
         "c1782910261926": {
-          "usar": true,
-          "valor": 0
+          "usar": false,
+          "valor": 0,
+          "vencimento": 21,
+          "pago": false
         }
-      }
+      },
+      "observacoes": "Enviar para Sicredi - R$ 2.339,00"
     }
   }
 }
