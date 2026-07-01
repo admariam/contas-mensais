@@ -169,11 +169,28 @@
   .lanc-item:last-child{ border-bottom: none; }
   .lanc-item.inativo{ opacity: 0.45; }
   .lanc-item .desc{ flex:1; font-size: 0.88rem; }
-  .lanc-item input[type=number]{
+  .lanc-item input[type=number].inpValor{
     width: 130px; padding: 7px 9px; border:1px solid var(--line); border-radius: var(--radius);
     font-family: var(--font-mono); text-align:right; font-variant-numeric: tabular-nums;
   }
   .lanc-item input[type=checkbox]{ width:16px; height:16px; }
+  .lanc-item input.inpVencimento{
+    width: 50px; padding: 7px 5px; border:1px solid var(--line); border-radius: var(--radius);
+    font-family: var(--font-mono); text-align:center;
+  }
+  .lanc-item .venc-wrap{ display:flex; align-items:center; gap:4px; font-size:0.68rem; color: var(--ink-soft); }
+  button.btnPago{
+    font-family: var(--font-mono); font-size: 0.68rem; padding: 6px 12px; border-radius: var(--radius);
+    border: 1px solid var(--line); background: var(--line-soft); color: var(--ink-soft);
+    cursor: pointer; white-space: nowrap; text-transform: uppercase; letter-spacing: 0.03em;
+  }
+  button.btnPago.pago{ background: var(--receita); color: #fff; border-color: var(--receita); }
+  #lancObs{
+    width: 100%; padding: 10px 12px; border: 1px solid var(--line); border-radius: var(--radius);
+    font-family: var(--font-body); font-size: 0.88rem; resize: vertical; min-height: 90px;
+    background: var(--surface); color: var(--ink);
+  }
+  #lancObs:focus{ outline: 2px solid var(--ink); outline-offset: 1px; }
 
   .month-picker{ display:flex; align-items:center; gap: 10px; margin-bottom: 18px; }
   .month-picker input{ font-family: var(--font-mono); padding: 8px 10px; border:1px solid var(--line); border-radius: var(--radius); }
@@ -248,6 +265,10 @@
       <input type="month" id="lancMonth">
     </div>
     <div id="lancList"></div>
+    <div class="field" style="margin-top:22px;">
+      <label for="lancObs">Anotações do mês</label>
+      <textarea id="lancObs" rows="4" placeholder="Observações gerais deste mês..."></textarea>
+    </div>
     <footer class="actions">
       <button class="btn" id="btnSalvarLancamento">Salvar lançamentos</button>
     </footer>
@@ -466,10 +487,15 @@ $('#btnAddConta').addEventListener('click', async ()=>{
 
 /* ---------- Lançamento mensal ---------- */
 function ensureMonth(key){
-  if(!data.meses[key]) data.meses[key] = { lancamentos: {} };
+  if(!data.meses[key]) data.meses[key] = { lancamentos: {}, observacoes: '' };
+  if(data.meses[key].observacoes === undefined) data.meses[key].observacoes = '';
   data.contas.forEach(c=>{
-    if(!data.meses[key].lancamentos[c.id]){
-      data.meses[key].lancamentos[c.id] = { usar: true, valor: 0 };
+    const existente = data.meses[key].lancamentos[c.id];
+    if(!existente){
+      data.meses[key].lancamentos[c.id] = { usar: true, valor: 0, vencimento: null, pago: false };
+    } else {
+      if(existente.vencimento === undefined) existente.vencimento = null;
+      if(existente.pago === undefined) existente.pago = false;
     }
   });
   return data.meses[key];
@@ -478,18 +504,23 @@ function renderLancamento(){
   const key = $('#lancMonth').value || currentMonthKey();
   $('#lancMonth').value = key;
   const mes = ensureMonth(key);
+  $('#lancObs').value = mes.observacoes || '';
   const wrap = $('#lancList');
   if(data.contas.length === 0){
     wrap.innerHTML = '<div class="empty">Cadastre contas primeiro, na aba Contas.</div>';
     return;
   }
   wrap.innerHTML = '<div class="ledger">' + data.contas.map(c=>{
-    const l = mes.lancamentos[c.id] || { usar:true, valor:0 };
+    const l = mes.lancamentos[c.id] || { usar:true, valor:0, vencimento:null, pago:false };
     return `
       <div class="lanc-item ${l.usar ? '' : 'inativo'}" data-id="${c.id}">
         <input type="checkbox" class="chkUsar" ${l.usar ? 'checked':''}>
         <span class="tag ${c.tipo}">${c.tipo}</span>
         <span class="desc">${c.descricao}</span>
+        <span class="venc-wrap">dia
+          <input type="number" min="1" max="31" class="inpVencimento" value="${l.vencimento ?? ''}" ${l.usar ? '':'disabled'}>
+        </span>
+        <button type="button" class="btnPago ${l.pago ? 'pago':''}" data-pago="${l.pago ? 1:0}" ${l.usar ? '':'disabled'}>${l.pago ? 'Pago':'Pendente'}</button>
         <input type="number" step="0.01" class="inpValor" value="${l.valor}" ${l.usar ? '':'disabled'}>
       </div>
     `;
@@ -500,6 +531,16 @@ function renderLancamento(){
       const item = e.target.closest('.lanc-item');
       item.classList.toggle('inativo', !chk.checked);
       item.querySelector('.inpValor').disabled = !chk.checked;
+      item.querySelector('.inpVencimento').disabled = !chk.checked;
+      item.querySelector('.btnPago').disabled = !chk.checked;
+    });
+  });
+  $$('.btnPago').forEach(btn=>{
+    btn.addEventListener('click', ()=>{
+      const pago = btn.dataset.pago === '1';
+      btn.dataset.pago = pago ? '0' : '1';
+      btn.classList.toggle('pago', !pago);
+      btn.textContent = pago ? 'Pendente' : 'Pago';
     });
   });
 }
@@ -511,8 +552,12 @@ $('#btnSalvarLancamento').addEventListener('click', async ()=>{
     const id = item.dataset.id;
     const usar = item.querySelector('.chkUsar').checked;
     const valor = parseFloat(item.querySelector('.inpValor').value) || 0;
-    mes.lancamentos[id] = { usar, valor };
+    const vencRaw = item.querySelector('.inpVencimento').value;
+    const vencimento = vencRaw ? Math.min(31, Math.max(1, parseInt(vencRaw,10))) : null;
+    const pago = item.querySelector('.btnPago').dataset.pago === '1';
+    mes.lancamentos[id] = { usar, valor, vencimento, pago };
   });
+  mes.observacoes = $('#lancObs').value;
   await persist('Atualiza lançamentos de ' + key);
   renderDashboard();
 });
@@ -581,8 +626,9 @@ function renderDashboard(){
     ledger.innerHTML = linhas.map(({conta,l}) => `
       <div class="ledger-row">
         <span class="tag ${conta.tipo}">${conta.tipo}</span>
-        <span class="desc">${conta.descricao}</span>
-        <span class="val">${fmt(l.valor)}</span>
+        <span class="desc">${conta.descricao}${l.vencimento ? ' · vence dia ' + l.vencimento : ''}</span>
+        <span class="val" style="margin-right:10px;">${fmt(l.valor)}</span>
+        <span class="tag" style="background:${l.pago ? 'var(--receita-bg)':'var(--line-soft)'}; color:${l.pago ? 'var(--receita)':'var(--ink-soft)'};">${l.pago ? 'pago':'pendente'}</span>
       </div>
     `).join('');
   }
