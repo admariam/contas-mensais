@@ -19,6 +19,11 @@
       "id": "c1782910059610",
       "tipo": "despesa",
       "descricao": "Conta de Internet"
+    },
+    {
+      "id": "c1782910068090",
+      "tipo": "despesa",
+      "descricao": "IPTU"
     }
   ],
   "meses": {}
