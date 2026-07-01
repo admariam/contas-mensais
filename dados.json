@@ -39,6 +39,11 @@
       "id": "c1782910132507",
       "tipo": "despesa",
       "descricao": "Mensalidade Teologia"
+    },
+    {
+      "id": "c1782910145611",
+      "tipo": "despesa",
+      "descricao": "Empréstimo Bradesco"
     }
   ],
   "meses": {}
