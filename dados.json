@@ -14,6 +14,11 @@
       "id": "c1782910038609",
       "tipo": "despesa",
       "descricao": "Conta de Energia"
+    },
+    {
+      "id": "c1782910059610",
+      "tipo": "despesa",
+      "descricao": "Conta de Internet"
     }
   ],
   "meses": {}
