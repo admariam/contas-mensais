@@ -64,6 +64,11 @@
       "id": "c1782910261926",
       "tipo": "despesa",
       "descricao": "IPVA"
+    },
+    {
+      "id": "c1782911743249",
+      "tipo": "receita",
+      "descricao": "Salário"
     }
   ],
   "meses": {
