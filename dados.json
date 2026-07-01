@@ -29,6 +29,11 @@
       "id": "c1782910102987",
       "tipo": "despesa",
       "descricao": "Conta do Celular"
+    },
+    {
+      "id": "c1782910110003",
+      "tipo": "despesa",
+      "descricao": "Dízimo"
     }
   ],
   "meses": {}
