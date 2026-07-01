@@ -82,7 +82,7 @@
         },
         "c1782910031634": {
           "usar": true,
-          "valor": 0,
+          "valor": 1000,
           "vencimento": 10,
           "pago": false
         },
@@ -112,7 +112,7 @@
         },
         "c1782910110003": {
           "usar": true,
-          "valor": 200,
+          "valor": 100,
           "vencimento": 10,
           "pago": false
         },
