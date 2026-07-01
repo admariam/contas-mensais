@@ -54,6 +54,11 @@
       "id": "c1782910193092",
       "tipo": "despesa",
       "descricao": "Cartão de Crédito Sicredi"
+    },
+    {
+      "id": "c1782910199829",
+      "tipo": "despesa",
+      "descricao": "Cartão de Crédito Bradesco"
     }
   ],
   "meses": {}
