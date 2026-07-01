@@ -49,6 +49,11 @@
       "id": "c1782910185885",
       "tipo": "despesa",
       "descricao": "Cartão de Crédito Azul"
+    },
+    {
+      "id": "c1782910193092",
+      "tipo": "despesa",
+      "descricao": "Cartão de Crédito Sicredi"
     }
   ],
   "meses": {}
