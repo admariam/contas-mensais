@@ -59,6 +59,11 @@
       "id": "c1782910199829",
       "tipo": "despesa",
       "descricao": "Cartão de Crédito Bradesco"
+    },
+    {
+      "id": "c1782910261926",
+      "tipo": "despesa",
+      "descricao": "IPVA"
     }
   ],
   "meses": {}
