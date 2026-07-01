@@ -4,6 +4,11 @@
       "id": "c1782909833981",
       "tipo": "despesa",
       "descricao": "Financiamento Apartamento"
+    },
+    {
+      "id": "c1782910031634",
+      "tipo": "despesa",
+      "descricao": "Conta do Condominal (Condomínio + Água + Gás)"
     }
   ],
   "meses": {}
