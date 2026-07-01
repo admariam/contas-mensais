@@ -151,6 +151,12 @@
           "valor": 0,
           "vencimento": 21,
           "pago": false
+        },
+        "c1782911743249": {
+          "usar": true,
+          "valor": 7460,
+          "vencimento": 1,
+          "pago": false
         }
       },
       "observacoes": "Enviar para Sicredi - R$ 2.339,00"
