@@ -34,6 +34,11 @@
       "id": "c1782910110003",
       "tipo": "despesa",
       "descricao": "Dízimo"
+    },
+    {
+      "id": "c1782910132507",
+      "tipo": "despesa",
+      "descricao": "Mensalidade Teologia"
     }
   ],
   "meses": {}
