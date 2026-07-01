@@ -66,5 +66,62 @@
       "descricao": "IPVA"
     }
   ],
-  "meses": {}
+  "meses": {
+    "2026-07": {
+      "lancamentos": {
+        "c1782909833981": {
+          "usar": true,
+          "valor": 1869.15
+        },
+        "c1782910031634": {
+          "usar": true,
+          "valor": 0
+        },
+        "c1782910038609": {
+          "usar": true,
+          "valor": 49.39
+        },
+        "c1782910059610": {
+          "usar": true,
+          "valor": 129
+        },
+        "c1782910068090": {
+          "usar": true,
+          "valor": 0
+        },
+        "c1782910102987": {
+          "usar": true,
+          "valor": 82
+        },
+        "c1782910110003": {
+          "usar": true,
+          "valor": 200
+        },
+        "c1782910132507": {
+          "usar": true,
+          "valor": 397
+        },
+        "c1782910145611": {
+          "usar": true,
+          "valor": 1367.21
+        },
+        "c1782910185885": {
+          "usar": true,
+          "valor": 440
+        },
+        "c1782910193092": {
+          "usar": true,
+          "valor": 2184.21
+        },
+        "c1782910199829": {
+          "usar": true,
+          "valor": 685.02
+        },
+        "c1782910261926": {
+          "usar": true,
+          "valor": 0
+        }
+      }
+    }
+  }
 }
