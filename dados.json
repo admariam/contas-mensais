@@ -9,6 +9,11 @@
       "id": "c1782910031634",
       "tipo": "despesa",
       "descricao": "Conta do Condominal (Condomínio + Água + Gás)"
+    },
+    {
+      "id": "c1782910038609",
+      "tipo": "despesa",
+      "descricao": "Conta de Energia"
     }
   ],
   "meses": {}
