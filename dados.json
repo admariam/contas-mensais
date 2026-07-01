@@ -44,6 +44,11 @@
       "id": "c1782910145611",
       "tipo": "despesa",
       "descricao": "Empréstimo Bradesco"
+    },
+    {
+      "id": "c1782910185885",
+      "tipo": "despesa",
+      "descricao": "Cartão de Crédito Azul"
     }
   ],
   "meses": {}
