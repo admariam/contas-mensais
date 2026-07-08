@@ -82,9 +82,9 @@
         },
         "c1782910031634": {
           "usar": true,
-          "valor": 1000,
+          "valor": 864,
           "vencimento": 10,
-          "pago": false
+          "pago": true
         },
         "c1782910038609": {
           "usar": true,
@@ -108,11 +108,11 @@
           "usar": true,
           "valor": 82,
           "vencimento": 9,
-          "pago": false
+          "pago": true
         },
         "c1782910110003": {
           "usar": true,
-          "valor": 100,
+          "valor": 200,
           "vencimento": 10,
           "pago": false
         },
@@ -132,7 +132,7 @@
           "usar": true,
           "valor": 440,
           "vencimento": 15,
-          "pago": false
+          "pago": true
         },
         "c1782910193092": {
           "usar": true,
@@ -142,7 +142,7 @@
         },
         "c1782910199829": {
           "usar": true,
-          "valor": 685.02,
+          "valor": 755,
           "vencimento": 15,
           "pago": false
         },
@@ -156,7 +156,7 @@
           "usar": true,
           "valor": 7460,
           "vencimento": 1,
-          "pago": false
+          "pago": true
         }
       },
       "observacoes": "Enviar para Sicredi - R$ 2.339,00"
