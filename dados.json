@@ -160,6 +160,95 @@
         }
       },
       "observacoes": "Enviar para Sicredi - R$ 2.339,00"
+    },
+    "2026-08": {
+      "lancamentos": {
+        "c1782909833981": {
+          "usar": true,
+          "valor": 1868,
+          "vencimento": null,
+          "pago": true
+        },
+        "c1782910031634": {
+          "usar": true,
+          "valor": 1036,
+          "vencimento": null,
+          "pago": true
+        },
+        "c1782910038609": {
+          "usar": true,
+          "valor": 0,
+          "vencimento": null,
+          "pago": true
+        },
+        "c1782910059610": {
+          "usar": true,
+          "valor": 129,
+          "vencimento": null,
+          "pago": true
+        },
+        "c1782910068090": {
+          "usar": true,
+          "valor": 0,
+          "vencimento": null,
+          "pago": false
+        },
+        "c1782910102987": {
+          "usar": true,
+          "valor": 78,
+          "vencimento": null,
+          "pago": true
+        },
+        "c1782910110003": {
+          "usar": true,
+          "valor": 100,
+          "vencimento": null,
+          "pago": true
+        },
+        "c1782910132507": {
+          "usar": true,
+          "valor": 397,
+          "vencimento": null,
+          "pago": true
+        },
+        "c1782910145611": {
+          "usar": true,
+          "valor": 1368,
+          "vencimento": null,
+          "pago": true
+        },
+        "c1782910185885": {
+          "usar": true,
+          "valor": 441,
+          "vencimento": null,
+          "pago": false
+        },
+        "c1782910193092": {
+          "usar": true,
+          "valor": 2429,
+          "vencimento": null,
+          "pago": false
+        },
+        "c1782910199829": {
+          "usar": true,
+          "valor": 630,
+          "vencimento": null,
+          "pago": false
+        },
+        "c1782910261926": {
+          "usar": true,
+          "valor": 0,
+          "vencimento": null,
+          "pago": true
+        },
+        "c1782911743249": {
+          "usar": true,
+          "valor": 7534,
+          "vencimento": null,
+          "pago": true
+        }
+      },
+      "observacoes": ""
     }
   }
 }
