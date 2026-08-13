@@ -221,19 +221,19 @@
           "usar": true,
           "valor": 441,
           "vencimento": null,
-          "pago": false
+          "pago": true
         },
         "c1782910193092": {
           "usar": true,
           "valor": 2429,
           "vencimento": null,
-          "pago": false
+          "pago": true
         },
         "c1782910199829": {
           "usar": true,
           "valor": 630,
           "vencimento": null,
-          "pago": false
+          "pago": true
         },
         "c1782910261926": {
           "usar": true,
