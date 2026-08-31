@@ -249,6 +249,95 @@
         }
       },
       "observacoes": ""
+    },
+    "2026-09": {
+      "lancamentos": {
+        "c1782909833981": {
+          "usar": true,
+          "valor": 1864,
+          "vencimento": null,
+          "pago": true
+        },
+        "c1782910031634": {
+          "usar": true,
+          "valor": 1000,
+          "vencimento": null,
+          "pago": false
+        },
+        "c1782910038609": {
+          "usar": true,
+          "valor": 112,
+          "vencimento": null,
+          "pago": true
+        },
+        "c1782910059610": {
+          "usar": true,
+          "valor": 129,
+          "vencimento": null,
+          "pago": true
+        },
+        "c1782910068090": {
+          "usar": true,
+          "valor": 0,
+          "vencimento": null,
+          "pago": true
+        },
+        "c1782910102987": {
+          "usar": true,
+          "valor": 79,
+          "vencimento": null,
+          "pago": false
+        },
+        "c1782910110003": {
+          "usar": true,
+          "valor": 100,
+          "vencimento": null,
+          "pago": true
+        },
+        "c1782910132507": {
+          "usar": true,
+          "valor": 397,
+          "vencimento": null,
+          "pago": true
+        },
+        "c1782910145611": {
+          "usar": true,
+          "valor": 1367,
+          "vencimento": null,
+          "pago": true
+        },
+        "c1782910185885": {
+          "usar": true,
+          "valor": 427,
+          "vencimento": null,
+          "pago": false
+        },
+        "c1782910193092": {
+          "usar": true,
+          "valor": 3333,
+          "vencimento": null,
+          "pago": false
+        },
+        "c1782910199829": {
+          "usar": true,
+          "valor": 625,
+          "vencimento": null,
+          "pago": false
+        },
+        "c1782910261926": {
+          "usar": true,
+          "valor": 0,
+          "vencimento": null,
+          "pago": true
+        },
+        "c1782911743249": {
+          "usar": true,
+          "valor": 7400,
+          "vencimento": null,
+          "pago": true
+        }
+      },
+      "observacoes": ""
     }
   }
 }
