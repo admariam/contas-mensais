@@ -79,6 +79,11 @@
       "id": "c1790796370307",
       "tipo": "despesa",
       "descricao": "Empréstimo Fabi"
+    },
+    {
+      "id": "c1790796376516",
+      "tipo": "despesa",
+      "descricao": "Emprestimo Dulce"
     }
   ],
   "meses": {
