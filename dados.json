@@ -74,6 +74,11 @@
       "id": "c1790796202511",
       "tipo": "despesa",
       "descricao": "Empréstimo Banco do Brasil"
+    },
+    {
+      "id": "c1790796370307",
+      "tipo": "despesa",
+      "descricao": "Empréstimo Fabi"
     }
   ],
   "meses": {
