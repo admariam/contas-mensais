@@ -74,6 +74,11 @@
       "id": "c1790796151014",
       "tipo": "despesa",
       "descricao": "Seguro Scooter"
+    },
+    {
+      "id": "c1790796202511",
+      "tipo": "despesa",
+      "descricao": "Empréstimo Banco do Brasil"
     }
   ],
   "meses": {
@@ -425,6 +430,12 @@
           "pago": false
         },
         "c1782911743249": {
+          "usar": true,
+          "valor": 0,
+          "vencimento": null,
+          "pago": false
+        },
+        "c1790796151014": {
           "usar": true,
           "valor": 0,
           "vencimento": null,
