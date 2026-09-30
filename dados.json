@@ -360,7 +360,7 @@
           "usar": true,
           "valor": 1862.85,
           "vencimento": null,
-          "pago": false
+          "pago": true
         },
         "c1782910031634": {
           "usar": true,
@@ -370,39 +370,39 @@
         },
         "c1782910038609": {
           "usar": true,
-          "valor": 0,
+          "valor": 69,
           "vencimento": null,
-          "pago": false
+          "pago": true
         },
         "c1782910059610": {
           "usar": true,
           "valor": 129,
           "vencimento": null,
-          "pago": false
+          "pago": true
         },
         "c1782910068090": {
           "usar": true,
           "valor": 0,
           "vencimento": null,
-          "pago": false
+          "pago": true
         },
         "c1782910102987": {
           "usar": true,
           "valor": 79,
           "vencimento": null,
-          "pago": false
+          "pago": true
         },
         "c1782910110003": {
           "usar": true,
           "valor": 200,
           "vencimento": null,
-          "pago": false
+          "pago": true
         },
         "c1782910132507": {
           "usar": true,
           "valor": 397,
           "vencimento": null,
-          "pago": false
+          "pago": true
         },
         "c1782910145611": {
           "usar": true,
@@ -418,9 +418,9 @@
         },
         "c1782910193092": {
           "usar": true,
-          "valor": 0,
+          "valor": 3425,
           "vencimento": null,
-          "pago": false
+          "pago": true
         },
         "c1782910199829": {
           "usar": true,
@@ -432,23 +432,35 @@
           "usar": true,
           "valor": 0,
           "vencimento": null,
-          "pago": false
+          "pago": true
         },
         "c1782911743249": {
           "usar": true,
           "valor": 7400,
           "vencimento": null,
-          "pago": false
+          "pago": true
         },
         "c1790796151014": {
           "usar": true,
           "valor": 79,
           "vencimento": null,
-          "pago": false
+          "pago": true
         },
         "c1790796202511": {
           "usar": true,
           "valor": 800,
+          "vencimento": null,
+          "pago": false
+        },
+        "c1790796370307": {
+          "usar": true,
+          "valor": 0,
+          "vencimento": null,
+          "pago": false
+        },
+        "c1790796376516": {
+          "usar": true,
+          "valor": 0,
           "vencimento": null,
           "pago": false
         }
