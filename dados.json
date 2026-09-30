@@ -348,13 +348,13 @@
       "lancamentos": {
         "c1782909833981": {
           "usar": true,
-          "valor": 0,
+          "valor": 1862.85,
           "vencimento": null,
           "pago": false
         },
         "c1782910031634": {
           "usar": true,
-          "valor": 0,
+          "valor": 1000,
           "vencimento": null,
           "pago": false
         },
@@ -366,7 +366,7 @@
         },
         "c1782910059610": {
           "usar": true,
-          "valor": 0,
+          "valor": 129,
           "vencimento": null,
           "pago": false
         },
@@ -378,19 +378,19 @@
         },
         "c1782910102987": {
           "usar": true,
-          "valor": 0,
+          "valor": 79,
           "vencimento": null,
           "pago": false
         },
         "c1782910110003": {
           "usar": true,
-          "valor": 0,
+          "valor": 200,
           "vencimento": null,
           "pago": false
         },
         "c1782910132507": {
           "usar": true,
-          "valor": 0,
+          "valor": 397,
           "vencimento": null,
           "pago": false
         },
@@ -426,13 +426,19 @@
         },
         "c1782911743249": {
           "usar": true,
-          "valor": 0,
+          "valor": 7400,
           "vencimento": null,
           "pago": false
         },
         "c1790796151014": {
           "usar": true,
-          "valor": 0,
+          "valor": 79,
+          "vencimento": null,
+          "pago": false
+        },
+        "c1790796202511": {
+          "usar": true,
+          "valor": 800,
           "vencimento": null,
           "pago": false
         }
